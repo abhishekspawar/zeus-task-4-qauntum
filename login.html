@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/utilities.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/login.css" />
+    <title>Login | Quantum</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-------------------------- HEADER ---------------------------------->
+      <header class="header d-flex align-center justify-between header-border">
+        <!-- company logo -->
+        <div class="d-flex align-center" style="z-index: 99">
+          <a href="#" class="d-flex align-center header-company-logo">
+            <img src="/assets/icons/logo used in header.svg" alt="" />
+          </a>
+        </div>
+      </header>
+      <!-------------------------- LOGIN FORM ---------------------------------->
+
+      <div class="form-wrapper">
+        <form action="" id="myForm" class="login-form">
+          <!-- back button -->
+          <div class="back-btn">
+            <img src="/assets/icons/back.svg" alt="" />
+          </div>
+          <h1>Log in with Quantum</h1>
+          <!-- radio button -->
+          <div class="d-flex align-center custom-radio-group">
+            <div class="d-flex align-center custom-radio">
+              <input
+                type="radio"
+                name="schoolType"
+                id=""
+                class="custom-radio-input"
+              />
+              <label for="district-school" class="text-black fw-600"
+                >District</label
+              >
+            </div>
+            <div class="d-flex align-center custom-radio">
+              <input
+                type="radio"
+                name="schoolType"
+                id=""
+                class="custom-radio-input"
+              />
+              <label for="independent-school" class="text-black fw-600"
+                >Independent school</label
+              >
+            </div>
+          </div>
+          <!-- dropdown 1 -->
+          <div class="custom-select-group">
+            <label for="state" class="input-label">State*</label>
+            <div class="custom-select-wrapper login-custom-select-wrapper">
+              <select
+                name="state"
+                id="state"
+                class="custom-select text-black fw-600"
+              >
+                <option value="alabama">Alabama</option>
+                <option value="texas">Texas</option>
+                <option value="dallas">Dallas</option>
+              </select>
+              <div class="custom-select-arrow">
+                <img src="/assets/icons/arrow-down.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- dropdown 2 -->
+          <div class="custom-select-group">
+            <label for="district" class="input-label">District*</label>
+            <div class="custom-select-wrapper login-custom-select-wrapper">
+              <select
+                name="state"
+                id="district"
+                class="custom-select text-black fw-600"
+              >
+                <option value="alabama">Alabama School District</option>
+                <option value="texas">Texas</option>
+                <option value="dalla">Dallas</option>
+              </select>
+              <div class="custom-select-arrow">
+                <img src="/assets/icons/arrow-down.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- username/email id -->
+          <div class="input-group">
+            <input
+              type="text"
+              placeholder="Username/Email ID*"
+              class="fw-600"
+            />
+            <button class="input-group-btn">FORGOT USERNAME?</button>
+          </div>
+          <!-- password-->
+          <div class="input-group password">
+            <input type="password" placeholder="Password*" class="fw-600" />
+            <button class="input-group-btn">FORGOT PASSWORD?</button>
+            <div class="custom-input-eye">
+              <img src="/assets/icons/preview.svg" alt="" />
+            </div>
+          </div>
+          <!-- checkbox -->
+          <div class="d-flex align-center custom-checkbox">
+            <input
+              type="checkbox"
+              name="saveUserLogin"
+              id="remember"
+              class="custom-checkbox-input"
+            />
+            <label for="remember" class="text-black fw-600">Remember Me</label>
+          </div>
+          <!-- submit button -->
+          <div class="submit-btn-wrapper">
+            <button type="submit" class="submit-btn fw-600">LOG IN</button>
+          </div>
+        </form>
+      </div>
+      <!-------------------------- FOOTER ---------------------------------->
+      <footer class="d-flex fd-column justify-between align-center">
+        <ul class="page-links d-flex align-center justify-center fw-900">
+          <li><a href="">About</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+        <div class="copyright d-flex justify-center align-center">
+          <img
+            src="/assets/icons/logo used in footer.svg"
+            alt=""
+            class="footer-logo"
+          />
+          <span class="copyright-text fw-600">Copyright © 2020-2021</span>
+          <span class="footer-company-name fw-900">Zeus Systems Pvt. Ltd.</span>
+          <span class="rights-text fw-600">All rights reserved.</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

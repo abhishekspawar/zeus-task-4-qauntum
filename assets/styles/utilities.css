@@ -1,0 +1,37 @@
+.d-flex{
+    display: flex;
+}
+.d-none{
+    display: none;
+}
+.fd-column{
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+.align-end{
+    align-items: flex-end;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.fw-600{
+    font-weight: 600;
+}
+.fw-900{
+    font-weight: 900;
+}
+.text-black{
+    color: #222222;
+}
+.text-green{
+    color: #1F7A54;
+}

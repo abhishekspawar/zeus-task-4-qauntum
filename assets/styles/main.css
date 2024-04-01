@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "my-font";
+  src: url(/assets/font/Quicksand-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "my-font", sans-serif;
+  background-color: #eeeeee;
+}
+.container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 56px auto 74px;
+}
+/* ------------------------ HEADER ---------------------------- */
+.header {
+  background: url(/assets/header\ pattern\ svg.svg);
+  position: relative;
+  color: #ffffff;
+}
+.header::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #25313f;
+  opacity: 0.8;
+}
+
+.header-company-logo {
+  margin-left: 24px;
+}
+
+/* ------------------------ FOOTER ---------------------------- */
+
+.page-links {
+  list-style: none;
+  gap: 2px;
+}
+
+.page-links > li {
+  margin: 0;
+  padding: 0;
+}
+
+.page-links > li > a {
+  text-decoration: none;
+  color: #1f7a54;
+  font-family: "my-font", sans-serif;
+  font-size: 14px;
+  padding: 0 10px;
+}
+.page-links > li:first-child {
+  border-right: 2px solid #e0e1e1;
+}
+
+.copyright {
+  height: 40px;
+  width: 100%;
+  background-color: #e0e1e1;
+  color: #616161;
+  font-size: 12px;
+}
+
+.footer-logo {
+  border-right: 2px solid #0000001f;
+  padding-right: 16px;
+}
+
+.copyright-text {
+  padding-left: 16px;
+  padding-right: 8px;
+}
+
+.rights-text {
+  padding-left: 11px;
+}
+
+/*------------- CUSTOM SELECT TAG ---------------  */
+
+.custom-select-wrapper {
+  position: relative;
+}
+
+.custom-select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #0000000c;
+  background: transparent;
+  padding-bottom: 5px;
+  outline: none;
+  font-size: 16px;
+  font-family: "my-font", sans-serif;
+}
+
+.custom-select-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+/*------------- CUSTOM RADIO BUTTON ---------------  */
+
+input[type="radio"].custom-radio-input {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1f7a54;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"].custom-radio-input::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  transform: scale(1);
+  visibility: hidden;
+  transition: 120ms transform ease-in-out;
+  background-color: #1f7a54;
+}
+
+input[type="radio"].custom-radio-input:checked::before {
+  visibility: visible;
+}
+
+/*------------- CUSTOM CHECKBOX BUTTON ---------------  */
+
+input[type="checkbox"].custom-checkbox-input {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #1f7a54;
+  border-radius: 2px;
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"].custom-checkbox-input::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  visibility: visible;
+  clip-path: polygon(15% 36%, 38% 68%, 89% 15%, 100% 28%, 36% 96%, 1% 49%);
+  background-color: white;
+}
+
+input[type="checkbox"].custom-checkbox-input:checked {
+  background-color: #1f7a54;
+}

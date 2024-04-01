@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <link rel="stylesheet" href="/assets/styles/utilities.css" />
+    <link rel="stylesheet" href="/assets/styles/dashboard.css" />
+    <title>Dashboard | Quantum</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-------------------------- HEADER ---------------------------------->
+      <header class="header d-flex align-center justify-between">
+        <!-- company logo -->
+        <div class="d-flex align-center"  style="z-index: 9">
+          <a href="#" class="d-flex align-center header-company-logo">
+            <img src="/assets/icons/logo used in header.svg" alt="" />
+          </a>
+        </div>
+        <div class="d-flex header-right align-center"  style="z-index: 9">
+        <!-- menu list -->
+          <ul class="d-flex align-center navbar-menu-list" id="menu-list">
+            <li class="active-menu">DASHBOARD</li>
+            <li>CONTENT</li>
+            <li>USERS</li>
+            <li>REPORTS</li>
+            <li>ADMIN</li>
+            <li class="menu-close-btn d-none" id="hide-menu-btn">CLOSE</li>
+          </ul>
+          <!-- icons list -->
+          <ul class="d-flex align-center navbar-icons-list" >
+            <li>
+              <img src="/assets/icons/alerts.svg" alt="" />
+              <span class="alerts-count d-flex justify-center align-center"
+                >2</span
+              >
+            </li>
+            <li>
+              <img src="/assets/icons/announcements.svg" alt="" /><span
+                class="announcements-count d-flex justify-center align-center"
+                >1</span
+              >
+            </li>
+            <li>
+              <img
+                src="/assets/images/profile.webp"
+                class="profile-photo"
+                alt=""
+              /><span
+                class="account-status d-flex justify-center align-center fw-900"
+                >T</span
+              >
+            </li>
+          </ul>
+          <!-- hamburger icon for small devices -->
+          <img
+            src="/assets/icons/hamburger-menu.svg"
+            class="hamburger-btn"
+            alt=""
+            id="show-menu-btn"
+          />
+        </div>
+      </header>
+
+      <!-------------------------- DASHBOARD ---------------------------------->
+
+      <div class="dashboard">
+        <!-- course and class count section -->
+        <div class="course-class-count-wrapper d-flex align-center">
+          <div class="d-flex align-center justify-center active-dashboard-tab">
+            <img src="/assets/icons/courses.svg" alt="" />
+            <span class="count fw-900">4</span>
+            <span class="text-black fw-600">Courses</span>
+          </div>
+          <div class="d-flex align-center justify-center">
+            <img src="/assets/icons/classes.svg" alt="" />
+            <span class="count fw-900">4</span>
+            <span class="text-black fw-600">Classes</span>
+          </div>
+        </div>
+        <!-- sorting section -->
+        <div class="sort-filter-wrapper d-flex align-center justify-between">
+          <p class="text-sm-grey sorting-info">
+            Showing <span>4</span> of <span>4</span>courses
+          </p>
+          <div class="sort-dropdown d-flex align-center">
+            <label for="courses" class="text-sm-grey" style="margin-right: 6px"
+              >Sort By:
+            </label>
+            <div class="custom-select-wrapper sort-custom-select-wrapper">
+              <select
+                name="courses"
+                id="courses"
+                class="custom-select fw-600"
+                style="color: #333333"
+              >
+                <option value="alabama">Course Name</option>
+                <option value="texas">Acceleration</option>
+                <option value="dallas">Introduction to Biology</option>
+              </select>
+              <div class="custom-select-arrow">
+                <img src="/assets/icons/arrow-down.svg" alt="" />
+              </div>
+            </div>
+            <span class="up-arrow">
+              <img src="/assets/icons/sort.svg" alt="" />
+            </span>
+          </div>
+        </div>
+        <!-- cards section -->
+
+        <div class="cards-wrapper">
+          <!--card 1  Acceleration -->
+          <div class="card d-flex fd-column justify-between">
+            <div class="upper d-flex">
+              <div class="card-img">
+                <img src="/assets/images/imageMask.png" alt="" />
+              </div>
+              <div class="card-info">
+                <div class="card-header">
+                  <h3>Acceleration</h3>
+                  <span class="favourite marked"
+                    ><i class="zmdi zmdi-star"></i
+                  ></span>
+                </div>
+                <div class="card-labels text-sm-grey">
+                  <p>Physics</p>
+                  <div class="vertical-line"></div>
+                  <p>Grade 7 <span class="text-green">+2</span></p>
+                </div>
+                <div class="card-labels text-sm-grey">
+                  <p><span class="text-black fw-900">4</span> Units</p>
+                  <p><span class="text-black fw-900">18</span> Lessons</p>
+                  <p><span class="text-black fw-900">24</span> Topics</p>
+                </div>
+                <div class="custom-select-wrapper card-custom-select-wrapper">
+                  <select
+                    name="courses"
+                    id="courses"
+                    class="custom-select text-black fw-600"
+                  >
+                    <option value="alabama">Mr. Frank's Class B</option>
+                    <option value="texas">Option 2</option>
+                    <option value="dallas">Option 3</option>
+                  </select>
+                  <div class="custom-select-arrow">
+                    <img src="/assets/icons/arrow-down.svg" alt="" />
+                  </div>
+                </div>
+                <div class="card-labels text-sm-grey">
+                  <p>50 Students</p>
+                  <div class="vertical-line"></div>
+                  <p>21-Jan-2020 - 21-Aug-2020</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lower d-flex justify-between align-end">
+              <div>
+                <img src="/assets/icons/preview.svg" alt="" />
+              </div>
+              <div>
+                <img src="/assets/icons/manage course.svg" alt="" />
+              </div>
+              <div>
+                <img src="/assets/icons/grade submissions.svg" alt="" />
+              </div>
+              <div>
+                <img src="/assets/icons/reports.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--card 2  Displacement, Velocity and Speed -->
+          <div class="card d-flex fd-column justify-between">
+            <div class="upper d-flex">
+              <div class="card-img">
+                <img src="/assets/images/imageMask-1.png" alt="" />
+              </div>
+              <div class="card-info">
+                <div class="card-header">
+                  <h3>Displacement, Velocity and Speed</h3>
+                  <span class="favourite marked"
+                    ><i class="zmdi zmdi-star"></i
+                  ></span>
+                </div>
+                <div class="card-labels text-sm-grey">
+                  <p>Physics</p>
+                  <div class="vertical-line"></div>
+                  <p>Grade 6 <span class="text-green">+3</span></p>
+                </div>
+                <div class="card-labels text-sm-grey">
+                  <p><span class="text-black fw-900">2</span> Units</p>
+                  <p><span class="text-black fw-900">15</span> Lessons</p>
+                  <p><span class="text-black fw-900">20</span> Topics</p>
+                </div>
+                <div class="custom-select-wrapper card-custom-select-wrapper">
+                  <select
+                    name="courses"
+                    id="courses"
+                    class="custom-select text-black fw-600 card-custom-select-disabled"
+                  >
+                    <option value="alabama">No Classes</option>
+                  </select>
+                  <div class="custom-select-arrow">
+                    <img src="/assets/icons/arrow-down.svg" alt="" />
+                  </div>
+                </div>
+                <div class="card-labels text-sm-grey">
+                  <p>50 Students</p>
+                  <div class="vertical-line"></div>
+                  <p>21-Jan-2020 - 21-Aug-2020</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lower d-flex justify-between align-end">
+              <div>
+                <img src="/assets/icons/preview.svg" alt="" />
+              </div>
+              <div class="card-icons-disabled">
+                <img src="/assets/icons/manage course.svg" alt="" />
+              </div>
+              <div class="card-icons-disabled">
+                <img src="/assets/icons/grade submissions.svg" alt="" />
+              </div>
+              <div>
+                <img src="/assets/icons/reports.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--card 3  Introduction to Biology -->
+          <div class="card d-flex fd-column justify-between">
+            <div class="upper d-flex">
+              <div class="card-img">
+                <img src="/assets/images/imageMask-3.png" alt="" />
+              </div>
+              <div class="card-info">
+                <div class="card-header">
+                  <h3>
+                    Introduction to Biology: Micro organisms and how they affect
+                    the other Life Systems in En...
+                  </h3>
+                  <span class="favourite marked"
+                    ><i class="zmdi zmdi-star"></i
+                  ></span>
+                </div>
+                <div class="card-labels text-sm-grey">
+                  <p>Biology</p>
+                  <div class="vertical-line"></div>
+                  <p>Grade 4 <span class="text-green">+1</span></p>
+                </div>
+                <div class="card-labels text-sm-grey">
+                  <p><span class="text-black fw-900">5</span> Units</p>
+                  <p><span class="text-black fw-900">16</span> Lessons</p>
+                  <p><span class="text-black fw-900">22</span> Topics</p>
+                </div>
+                <div class="custom-select-wrapper card-custom-select-wrapper">
+                  <select
+                    name="courses"
+                    id="courses"
+                    class="custom-select text-black fw-600"
+                  >
+                    <option value="alabama">All Classes</option>
+                    <option value="texas">Option 2</option>
+                    <option value="dallas">Option 3</option>
+                  </select>
+                  <div class="custom-select-arrow">
+                    <img src="/assets/icons/arrow-down.svg" alt="" />
+                  </div>
+                </div>
+                <div class="card-labels text-sm-grey">
+                  <p>300 Students</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lower d-flex justify-between align-end">
+              <div>
+                <img src="/assets/icons/preview.svg" alt="" />
+              </div>
+              <div class="card-icons-disabled">
+                <img src="/assets/icons/manage course.svg" alt="" />
+              </div>
+              <div class="card-icons-disabled">
+                <img src="/assets/icons/grade submissions.svg" alt="" />
+              </div>
+              <div>
+                <img src="/assets/icons/reports.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--card 4  Introduction to High School Mathematics -->
+          <div class="card d-flex fd-column justify-between">
+            <div class="card-tag d-flex justify-center align-center fw-900">
+              EXPIRED
+            </div>
+            <div class="upper d-flex">
+              <div class="card-img">
+                <img src="/assets/images/imageMask-2.png" alt="" />
+              </div>
+              <div class="card-info">
+                <div class="card-header">
+                  <h3>Introduction to High School Mathematics</h3>
+                  <span class="favourite"><i class="zmdi zmdi-star"></i></span>
+                </div>
+                <div class="card-labels text-sm-grey">
+                  <p>Mathematics</p>
+                  <div class="vertical-line"></div>
+                  <p>Grade 8 <span class="text-green">+3</span></p>
+                </div>
+                <div class="card-labels text-sm-grey">
+                  <p><span class="text-black fw-900">5</span> Units</p>
+                  <p><span class="text-black fw-900">16</span> Lessons</p>
+                  <p><span class="text-black fw-900">22</span> Topics</p>
+                </div>
+                <div class="custom-select-wrapper card-custom-select-wrapper">
+                  <select
+                    name="courses"
+                    id="courses"
+                    class="custom-select text-black fw-600"
+                  >
+                    <option value="alabama">Mr. Frank's Class B</option>
+                    <option value="texas">Option 2</option>
+                    <option value="dallas">Option 3</option>
+                  </select>
+                  <div class="custom-select-arrow">
+                    <img src="/assets/icons/arrow-down.svg" alt="" />
+                  </div>
+                </div>
+                <div class="card-labels text-sm-grey">
+                  <p>44 Students</p>
+                  <div class="vertical-line"></div>
+                  <p>14-Oct-2019 - 20-Oct-2020</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lower d-flex justify-between align-end">
+              <div>
+                <img src="/assets/icons/preview.svg" alt="" />
+              </div>
+              <div>
+                <img src="/assets/icons/manage course.svg" alt="" />
+              </div>
+              <div>
+                <img src="/assets/icons/grade submissions.svg" alt="" />
+              </div>
+              <div>
+                <img src="/assets/icons/reports.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------------------------- FOOTER ---------------------------------->
+
+      <footer class="d-flex fd-column justify-between align-center">
+        <ul class="page-links d-flex align-center justify-center fw-900">
+          <li><a href="">About</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+        <div class="copyright d-flex justify-center align-center">
+          <img
+            src="/assets/icons/logo used in footer.svg"
+            alt=""
+            class="footer-logo"
+          />
+          <span class="copyright-text fw-600">Copyright © 2020-2021</span>
+          <span class="footer-company-name fw-900">Zeus Systems Pvt. Ltd.</span>
+          <span class="rights-text fw-600">All rights reserved.</span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- External JS connection -->
+    <script src="/assets/scripts/dashboard.js"></script>
+  </body>
+</html>
